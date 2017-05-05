@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="algroup.com.mx.homedelivery">
+
+    <!-- PERMISO DE SERVICIO DE ACCESO A INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- PERMISO DE SERVICIO A UBICACION -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Bloque de permisos para el uso del barcode -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".HomeDeliveryApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".controller.MainLogin"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controller.MedicosListaActivity"
+            android:label="@string/title_activity_medicos_lista"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.ContenedorMedicosActivity"
+            android:label="@string/title_activity_contenedor_medicos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.MedicoMenuActivity"
+            android:label="@string/title_activity_medico_menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.DetalleEntregaActivity"
+            android:label="@string/title_activity_detalle_entrega"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.ContenedorDetalleEntrega"
+            android:label="@string/title_activity_contenedor_detalle_entrega"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.FirmaMedicoActivity"
+            android:label="@string/title_activity_firma_medico"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.UbicadoMedicoActivity"
+            android:label="@string/title_activity_ubicado_medico"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.DescartadoMedicoActivity"
+            android:label="@string/title_activity_descartado_medico"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.ComentariosActivity"
+            android:label="@string/title_activity_comentarios"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.DisplayErrorActivity"
+            android:label="@string/title_activity_display_error"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".controller.CapturarPaqueteActivity"
+            android:label="@string/title_activity_capturar_paquete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".controller.TextoNegacionActivity"
+            android:label="@string/title_activity_texto_negacion"
+            android:screenOrientation="portrait" />
+
+        <!-- Activitiy de uso del barcode -->
+        <activity
+            android:name="jim.h.common.android.zxinglib.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SearchResultsActivity"
+            android:label="@string/title_activity_search_results" />
+        <activity
+            android:name=".controller.IdentificarPersonaAFirmarActivity"
+            android:label="@string/title_activity_identificar_persona_afirmar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".controller.FotografiaAutorizadaActivity"
+            android:label="@string/title_activity_fotografia_autorizada"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

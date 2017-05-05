@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="algroup.com.mx.homedelivery.controller.TextoNegacionActivity">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_pfizer"
+        android:layout_alignTop="@+id/nombreMedicoTexView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/nombreMedicoTexView"
+        android:text="Ana Lilia Salgado Lopez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/emailMedicoEditText"
+        android:layout_alignEnd="@+id/emailMedicoEditText"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/especialidadTextView"
+        android:text="Odontología"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_below="@+id/nombreMedicoTexView"
+        android:layout_alignLeft="@+id/nombreMedicoTexView"
+        android:layout_alignStart="@+id/nombreMedicoTexView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="left" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:id="@+id/negacionScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/especialidadTextView"
+        android:layout_marginTop="20dp" >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/negacionTextView"
+            android:text="Mi firma certifica que soy Médico licenciado en la ciudad antes mencionada y estoy capacitado para pedir y recibir los productos gratuitos ya mencionados para las necesidades médicas de mis pacientes. Además, entiendo que este producto es una muestra y no puede ser vendido, canjeado, intercambio, devolver a crédito o utilizarlo(s) para buscar u obtener un beneficio."
+            android:layout_alignTop="@+id/negacionScrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp"
+            android:textSize="18dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancelarPedidoButton"
+        android:text="Cancelar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/continuarButton"
+        android:text="Continuar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Negación"
+        android:gravity="center"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/negacionScrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/negacionScrollView"
+        android:layout_alignEnd="@+id/negacionScrollView"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Home Delivery</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_medicos_lista">Lista de médicos</string>
+    <string name="title_activity_contenedor_medicos">ContenedorMedicosActivity</string>
+    <string name="title_activity_medico_menu">Menú</string>
+    <string name="title_activity_detalle_entrega">Detalle de entrega</string>
+    <string name="title_activity_contenedor_detalle_entrega">ContenedorDetalleEntrega</string>
+    <string name="title_activity_firma_medico">Firma de médico</string>
+    <string name="title_activity_ubicado_medico">Motivo de ubicado</string>
+    <string name="title_activity_descartado_medico">Motivo de descartado</string>
+    <string name="title_activity_comentarios">Comentarios</string>
+    <string name="title_activity_display_error">Error en aplicación</string>
+
+
+    <string name="Aceptar">Aceptar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="title_activity_capturar_paquete">Capturar Paquete</string>
+    <string name="title_activity_texto_negacion">Negación</string>
+    <string name="title_activity_search_results">SearchResultsActivity</string>
+    <string name="title_activity_identificar_persona_afirmar">¿Quién firma?</string>
+    <string name="title_activity_fotografia_autorizada">Fotografía de Identificación</string>
+
+
+</resources>

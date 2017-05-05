@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="algroup.com.mx.homedelivery.controller.IdentificarPersonaAFirmarActivity">
+
+    <TextView
+        android:id="@+id/especialidadTextView"
+        android:text="Odontología"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_below="@+id/nombreMedicoTexView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/nombreMedicoTexView"
+        android:text="Ana Lilia Salgado Lopez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quién firma?"
+        android:id="@+id/quienFirmaTextView"
+        android:layout_below="@+id/especialidadTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/cancelarButton"
+        android:text="Cancelar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/continuarButton"
+        android:text="Continuar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cancelarButton"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quienFirmaTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médico titular"
+            android:id="@+id/esMedicoTitularRadioButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:checked="true"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del medico"
+            android:id="@+id/nombreMedicoOptionTextView"
+            android:layout_below="@+id/esMedicoTitularRadioButton"
+            android:layout_alignStart="@+id/cancelarButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Persona Autorizada"
+            android:id="@+id/esPersonaAutorizadaRadioButton"
+            android:checked="false"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/nombreMedicoOptionTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de autorizado"
+            android:id="@+id/nombreAutorizadoOptionTextView"
+            android:layout_below="@+id/esPersonaAutorizadaRadioButton"
+            android:layout_alignStart="@+id/nombreMedicoOptionTextView" />
+    </RadioGroup>
+</RelativeLayout>
